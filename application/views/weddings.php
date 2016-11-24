@@ -16,13 +16,13 @@
     <!-- Favicon -->
     <link href="favicon.ico" rel="shortcut icon">
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.css" rel="stylesheet">
     <!-- Template CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/animate.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/nexus.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/nexus.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/custom.css" rel="stylesheet">
     <!-- Google Fonts-->
     <link href="http://fonts.googleapis.com/css?family=Raleway:100,300,400" type="text/css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" type="text/css" rel="stylesheet">
@@ -53,7 +53,7 @@
             <!-- Logo -->
             <div class="logo">
                 <a href="index.html" title="">
-                    <img src="<?php echo base_url(); ?>/img/logo.png" alt="Logo" />
+                    <img src="<?php echo base_url(); ?>img/logo.png" alt="Logo" />
                 </a>
             </div>
             <!-- End Logo -->
@@ -64,16 +64,16 @@
                 <div class="text-center visible-lg">
                     <ul id="hornavmenu" class="nav navbar-nav">
                         <li>
-                            <a href="index.html" class="fa-home">Home</a>
+                            <a href="<?php echo base_url(); ?>page_nav/goto_home" class="fa-home active">Home</a>
                         </li>
                         <li>
-                            <a href="Services.html" class="fa-gears  active">Services</a>
+                            <a href="<?php echo base_url(); ?>page_nav/goto_services" class="fa-gears">Services</a>
                         </li>
                         <li>
-                            <a href="pages-about-us.html" class="fa-copy">About Us</a>
+                            <a href="<?php echo base_url(); ?>page_nav/goto_about_us" class="fa-copy">About Us</a>
                         </li>
                         <li>
-                            <a href="contact.html" class="fa-comment ">Contact</a>
+                            <a href="<?php echo base_url(); ?>page_nav/goto_contact" class="fa-comment ">Contact</a>
                         </li>
 
                     </ul>
@@ -104,7 +104,7 @@
                             <div class="featured-info">
                                 <div class="info-wrapper">Halls</div>
                             </div>
-                            <img alt="image1" src="<?php echo base_url(); ?>/img/portfolio/image1.jpg">
+                            <img alt="image1" src="<?php echo base_url(); ?>img/portfolio/image1.jpg">
                         </div>
                     </figure>
                 </a>
@@ -120,7 +120,7 @@
                             <div class="featured-info">
                                 <div class="info-wrapper">Hall Decoration</div>
                             </div>
-                            <img alt="image2" src="<?php echo base_url(); ?>/img/portfolio/image2.jpg">
+                            <img alt="image2" src="<?php echo base_url(); ?>img/portfolio/image2.jpg">
                         </div>
                     </figure>
                 </a>
@@ -136,7 +136,7 @@
                             <div class="featured-info">
                                 <div class="info-wrapper">Catering</div>
                             </div>
-                            <img alt="image3" src="<?php echo base_url(); ?>/img/portfolio/image3.jpg">
+                            <img alt="image3" src="<?php echo base_url(); ?>img/portfolio/image3.jpg">
                         </div>
                     </figure>
                 </a>
@@ -152,7 +152,7 @@
                             <div class="featured-info">
                                 <div class="info-wrapper">Dresses</div>
                             </div>
-                            <img alt="image4" src="<?php echo base_url(); ?>/img/portfolio/image4.jpg">
+                            <img alt="image4" src="<?php echo base_url(); ?>img/portfolio/image4.jpg">
                         </div>
                     </figure>
                 </a>
@@ -168,7 +168,7 @@
                             <div class="featured-info">
                                 <div class="info-wrapper">Make-up</div>
                             </div>
-                            <img alt="image5" src="<?php echo base_url(); ?>/img/portfolio/image5.jpg">
+                            <img alt="image5" src="<?php echo base_url(); ?>img/portfolio/image5.jpg">
                         </div>
                     </figure>
                 </a>
@@ -184,7 +184,7 @@
                             <div class="featured-info">
                                 <div class="info-wrapper">Cakes</div>
                             </div>
-                            <img alt="image6" src="<?php echo base_url(); ?>/img/portfolio/image6.jpg">
+                            <img alt="image6" src="<?php echo base_url(); ?>img/portfolio/image6.jpg">
                         </div>
                     </figure>
                 </a>
@@ -200,7 +200,7 @@
                             <div class="featured-info">
                                 <div class="info-wrapper">Photography & Videography</div>
                             </div>
-                            <img alt="image7" src="<?php echo base_url(); ?>/img/portfolio/image7.jpg">
+                            <img alt="image7" src="<?php echo base_url(); ?>img/portfolio/image7.jpg">
                         </div>
                     </figure>
                 </a>
@@ -216,7 +216,7 @@
                             <div class="featured-info">
                                 <div class="info-wrapper">Sounds</div>
                             </div>
-                            <img alt="image8" src="<?php echo base_url(); ?>/img/portfolio/image8.jpg">
+                            <img alt="image8" src="<?php echo base_url(); ?>img/portfolio/image8.jpg">
                         </div>
                     </figure>
                 </a>
@@ -232,7 +232,7 @@
                             <div class="featured-info">
                                 <div class="info-wrapper">Prinings</div>
                             </div>
-                            <img alt="image9" src="<?php echo base_url(); ?>/img/portfolio/image9.jpg">
+                            <img alt="image9" src="<?php echo base_url(); ?>img/portfolio/image9.jpg">
                         </div>
                     </figure>
                 </a>
@@ -248,7 +248,7 @@
                             <div class="featured-info">
                                 <div class="info-wrapper">Soluta nobis eleifend</div>
                             </div>
-                            <img alt="image10" src="<?php echo base_url(); ?>/img/portfolio/image10.jpg">
+                            <img alt="image10" src="<?php echo base_url(); ?>img/portfolio/image10.jpg">
                         </div>
                     </figure>
                 </a>
@@ -264,7 +264,7 @@
                             <div class="featured-info">
                                 <div class="info-wrapper">Aenean venenatis</div>
                             </div>
-                            <img alt="image11" src="<?php echo base_url(); ?>/img/portfolio/image11.jpg">
+                            <img alt="image11" src="<?php echo base_url(); ?>img/portfolio/image11.jpg">
                         </div>
                     </figure>
                 </a>
@@ -280,7 +280,7 @@
                             <div class="featured-info">
                                 <div class="info-wrapper">Sed ut perspiciatis</div>
                             </div>
-                            <img alt="image12" src="<?php echo base_url(); ?>/img/portfolio/image12.jpg">
+                            <img alt="image12" src="<?php echo base_url(); ?>img/portfolio/image12.jpg">
                         </div>
                     </figure>
                 </a>
@@ -324,23 +324,23 @@
     </div>
     <!-- End Footer -->
     <!-- JS -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/bootstrap.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/scripts.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/scripts.js"></script>
     <!-- Isotope - Portfolio Sorting -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.isotope.js" type="text/javascript"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.isotope.js" type="text/javascript"></script>
     <!-- Mobile Menu - Slicknav -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.slicknav.js" type="text/javascript"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.slicknav.js" type="text/javascript"></script>
     <!-- Animate on Scroll-->
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.visible.js" charset="utf-8"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.visible.js" charset="utf-8"></script>
     <!-- Stellar Parallax -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.stellar.js" charset="utf-8"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.stellar.js" charset="utf-8"></script>
     <!-- Sticky Div -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.sticky.js" charset="utf-8"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.sticky.js" charset="utf-8"></script>
     <!-- Slimbox2-->
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/slimbox2.js" charset="utf-8"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/slimbox2.js" charset="utf-8"></script>
     <!-- Modernizr -->
-    <script src="<?php echo base_url(); ?>/js/modernizr.custom.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>js/modernizr.custom.js" type="text/javascript"></script>
     <!-- End JS -->
 </body>
 </html>

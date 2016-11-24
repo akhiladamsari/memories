@@ -16,13 +16,13 @@
     <!-- Favicon -->
     <link href="favicon.ico" rel="shortcut icon">
     <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/bootstrap.css" rel="stylesheet">
     <!-- Template CSS -->
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/animate.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/font-awesome.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/nexus.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/responsive.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/nexus.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>css/custom.css" rel="stylesheet">
     <!-- Google Fonts-->
     <link href="http://fonts.googleapis.com/css?family=Raleway:100,300,400" type="text/css" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" type="text/css" rel="stylesheet">
@@ -45,27 +45,27 @@
             <!-- Logo -->
             <div class="logo">
                 <a href="index.html" title="">
-                    <img src="<?php echo base_url(); ?>/img/logo.png" alt="Logo" />
+                    <img src="<?php echo base_url(); ?>img/logo.png" alt="Logo" />
                 </a>
             </div>
             <!-- End Logo -->
         </div>
         <!-- Top Menu -->
-        <div id="hornav" class="row text-dark">
+        <div id="hornav" class="row text-light">
             <div class="col-md-12">
                 <div class="text-center visible-lg">
                     <ul id="hornavmenu" class="nav navbar-nav">
                         <li>
-                            <a href="index.html" class="fa-home active">Home</a>
+                            <a href="<?php echo base_url(); ?>page_nav/goto_home" class="fa-home active">Home</a>
                         </li>
                         <li>
-                            <a href='controller/page_nav/goto_services()' class="fa-gears">Services</a>
+                            <a href="<?php echo base_url(); ?>page_nav/goto_services" class="fa-gears">Services</a>
                         </li>
                         <li>
-                            <a href="pages-about-us.html" class="fa-copy">About Us</a>
+                            <a href="<?php echo base_url(); ?>page_nav/goto_about_us" class="fa-copy">About Us</a>
                         </li>
                         <li>
-                            <a href="contact.html" class="fa-comment ">Contact</a>
+                            <a href="<?php echo base_url(); ?>page_nav/goto_contact" class="fa-comment ">Contact</a>
                         </li>
 
                     </ul>
@@ -86,7 +86,7 @@
                 <h2 class="text-center article-title">Welcome to Memories</h2>
                 <p class="text-center">Whether you need to plan a wedding, birthday, bridal or baby shower, or a fun party, Memories will be at your side every step of the way.
                     We offer a wide variety of services and look forward to helping YOU create moments into memories that will last a lifetime.</p>
-                <img class="fadeInUp animate" alt="" src="<?php echo base_url(); ?>/img/responsive_homepage.jpg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 40px;">
+                <img class="fadeInUp animate" alt="" src="<?php echo base_url(); ?>img/responsive_homepage.jpg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 40px;">
             </div>
             <!-- End Main Text -->
         </div>
@@ -185,23 +185,23 @@
     </div>
     <!-- End Footer -->
     <!-- JS -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/bootstrap.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/scripts.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/scripts.js"></script>
     <!-- Isotope - Portfolio Sorting -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.isotope.js" type="text/javascript"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.isotope.js" type="text/javascript"></script>
     <!-- Mobile Menu - Slicknav -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.slicknav.js" type="text/javascript"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.slicknav.js" type="text/javascript"></script>
     <!-- Animate on Scroll-->
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.visible.js" charset="utf-8"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.visible.js" charset="utf-8"></script>
     <!-- Stellar Parallax -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/jquery.stellar.js" charset="utf-8"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.stellar.js" charset="utf-8"></script>
     <!-- Sticky Div -->
-    <script type="text/javascript" src="<?php echo base_url(); ?><?php echo base_url(); ?>/js/jquery.sticky.js" charset="utf-8"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.sticky.js" charset="utf-8"></script>
     <!-- Slimbox2-->
-    <script type="text/javascript" src="<?php echo base_url(); ?>/js/slimbox2.js" charset="utf-8"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/slimbox2.js" charset="utf-8"></script>
     <!-- Modernizr -->
-    <script src="<?php echo base_url(); ?>/js/modernizr.custom.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>js/modernizr.custom.js" type="text/javascript"></script>
     <!-- End JS -->
 </body>
 </html>
