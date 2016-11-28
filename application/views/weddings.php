@@ -96,7 +96,7 @@
         <div class="row portfolio-group">
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 video">
-                <a href="./wedding/halls.html">
+                <a href="<?php echo base_url(); ?>page_nav/goto_wed_halls">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
@@ -112,7 +112,7 @@
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 video">
-                <a href="hall-deco.html">
+                <a href="<?php echo base_url(); ?>page_nav/goto_wed_hall_deco">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
@@ -128,7 +128,7 @@
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 video">
-                <a href="catering.html">
+                <a href="<?php echo base_url(); ?>page_nav/goto_wed_catering">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
@@ -144,7 +144,7 @@
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 code">
-                <a href="dresses.html">
+                <a href="<?php echo base_url(); ?>page_nav/goto_wed_dresses">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
@@ -160,7 +160,7 @@
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 code">
-                <a href="make-up.html">
+                <a href="<?php echo base_url(); ?>page_nav/goto_wed_makeup">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
@@ -176,7 +176,7 @@
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 code">
-                <a href="cakes.html">
+                <a href="<?php echo base_url(); ?>page_nav/goto_wed_cakes">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
@@ -192,7 +192,7 @@
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 code">
-                <a href="photography.html">
+                <a href="<?php echo base_url(); ?>page_nav/goto_wed_photo">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
@@ -208,7 +208,7 @@
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 video">
-                <a href="sounds.html">
+                <a href="<?php echo base_url(); ?>page_nav/goto_wed_sounds">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
@@ -224,7 +224,7 @@
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 audio">
-                <a href="printing.html">
+                <a href="<?php echo base_url(); ?>page_nav/goto_wed_printing">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">

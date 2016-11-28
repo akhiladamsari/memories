@@ -56,16 +56,16 @@
                 <div class="text-center visible-lg">
                     <ul id="hornavmenu" class="nav navbar-nav">
                         <li>
-                            <a href="index.html" class="fa-home active">Home</a>
+                            <a href="<?php echo base_url(); ?>page_nav/goto_home" class="fa-home active">Home</a>
                         </li>
                         <li>
-                            <a href="Services.html" class="fa-gears">Services</a>
+                            <a href="<?php echo base_url(); ?>page_nav/goto_services" class="fa-gears">Services</a>
                         </li>
                         <li>
-                            <a href="pages-about-us.html" class="fa-copy">About Us</a>
+                            <a href="<?php echo base_url(); ?>page_nav/goto_about_us" class="fa-copy">About Us</a>
                         </li>
                         <li>
-                            <a href="contact.html" class="fa-comment ">Contact</a>
+                            <a href="<?php echo base_url(); ?>page_nav/goto_contact" class="fa-comment ">Contact</a>
                         </li>
 
                     </ul>
@@ -78,80 +78,14 @@
 <!-- End Header -->
 <!-- === END HEADER === -->
 <!-- === BEGIN CONTENT === -->
-<div id="welcome" class="background-white">
-    <div class="container">
-        <div class="row margin-vert-40">
-            <!-- Main Text -->
-            <div class="col-md-12">
-                <h2 class="text-center article-title">Welcome to Memories</h2>
-                <p class="text-center">Whether you need to plan a wedding, birthday, bridal or baby shower, or a fun party, Memories will be at your side every step of the way.
-                    We offer a wide variety of services and look forward to helping YOU create moments into memories that will last a lifetime.</p>
-                <img class="fadeInUp animate" alt="" src="<?php echo base_url(); ?>/img/responsive_homepage.jpg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 40px;">
-            </div>
-            <!-- End Main Text -->
-        </div>
-    </div>
-</div>
-<!-- Icons -->
-<div id="icons" class="parallax-bg1 text-light background-primary" style="background-position: 50% 0%;" data-stellar-background-ratio="0.5">
-    <div class="container">
-        <div class="row margin-vert-40">
-            <!-- Icons -->
-            <div class="col-md-4 text-center animate fadeInLeft">
-                <i class="fa-crosshairs fa-3x color-primary-lighter"></i>
-                <h2 class="padding-top-10">Dream</h2>
-                <p>Dream about your upcoming event in a high level as possible.</p>
-            </div>
-            <div class="col-md-4 text-center animate fadeIn">
-                <i class="fa-cogs fa-3x color-primary-lighter"></i>
-                <h2 class="padding-top-10">Plan</h2>
-                <p>Start planning your event with us that we will help you to plan your dream event.</p>
-            </div>
-            <div class="col-md-4 text-center animate fadeInRight">
-                <i class="fa-smile-o fa-3x color-primary-lighter"></i>
-                <h2 class="padding-top-10">Enjoy</h2>
-                <p>Enjoy and make lots and lots of memories with your perfect event.</p>
-            </div>
-            <!-- End Icons -->
-        </div>
-    </div>
-</div>
-<!-- End Icons -->
-<!-- Content -->
-<div id="content" class="background-white">
-    <div class="container">
-        <div class="row margin-vert-40">
-            <div class="col-md-12">
-                <h2 class="text-center article-title">Lorem ipsum dolor</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut
-                    porttitor nisl dapibus eu.</p>
-                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor
-                    fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
-                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt
-                    rhoncus urna eget placerat.</p>
+<div id="content">
+    <div class="container background-white">
+        <div class="row margin-vert-30">
+            <div class="col-md-12 margin-top-30">
             </div>
         </div>
     </div>
 </div>
-<!-- End Content -->
-<!-- Hiring -->
-<div id="hiring" class="parallax-bg3 text-light" style="background-position: 50% 0%;" data-stellar-background-ratio="0.5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 margin-vert-40">
-                <h2 class="animate fadeIn" style="text-align: center;">We are Hiring!</h2>
-                <hr>
-                <p class="animate fadeIn" style="text-align: center;">Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo.
-                    <br>Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
-                <p class="animate fadeInUp" style="text-align: center;">
-                    <button class="btn btn-lg btn-default" type="button">View Details</button>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="clearfix"></div>
-</div>
-<!-- End Hiring -->
 <!-- === END CONTENT === -->
 <!-- === BEGIN FOOTER === -->
 <!-- Footer -->
@@ -205,4 +139,4 @@
     <!-- End JS -->
 </body>
 </html>
-<!-- === END FOOTER ===
+<!-- === END FOOTER ===-->

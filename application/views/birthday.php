@@ -7,7 +7,7 @@
 <!--<![endif]-->
 <head>
     <!-- Title -->
-    <title>Memories - Services</title>
+    <title>Memories - Birthday Celebration</title>
     <!-- Meta -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="">
@@ -90,19 +90,19 @@
     <div class="container background-white">
         <div class="row margin-vert-30">
             <div class="col-md-12">
-                <h1>Our Services</h1>
+                <h2>Birthday Celebration</h2>
             </div>
         </div>
         <div class="row portfolio-group">
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 video">
-                <a href="<?php echo base_url(); ?>page_nav/goto_weddings">
+                <a href="./wedding/halls.html">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
                         <div class="grid-image">
                             <div class="featured-info">
-                                <div class="info-wrapper">Weddings</div>
+                                <div class="info-wrapper">Halls</div>
                             </div>
                             <img alt="image1" src="<?php echo base_url(); ?>img/portfolio/image1.jpg">
                         </div>
@@ -112,13 +112,13 @@
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 video">
-                <a href="<?php echo base_url(); ?>page_nav/goto_contact">
+                <a href="hall-deco.html">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
                         <div class="grid-image">
                             <div class="featured-info">
-                                <div class="info-wrapper">Birthday Parties</div>
+                                <div class="info-wrapper">Hall Decoration</div>
                             </div>
                             <img alt="image2" src="<?php echo base_url(); ?>img/portfolio/image2.jpg">
                         </div>
@@ -128,13 +128,13 @@
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 video">
-                <a href="<?php echo base_url(); ?>page_nav/goto_pirith">
+                <a href="catering.html">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
                         <div class="grid-image">
                             <div class="featured-info">
-                                <div class="info-wrapper">Pirith Ceremonies</div>
+                                <div class="info-wrapper">Catering</div>
                             </div>
                             <img alt="image3" src="<?php echo base_url(); ?>img/portfolio/image3.jpg">
                         </div>
@@ -144,45 +144,13 @@
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 code">
-                <a href="<?php echo base_url(); ?>page_nav/goto_custom_parties">
+                <a href="cakes.html">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
                         <div class="grid-image">
                             <div class="featured-info">
-                                <div class="info-wrapper">Custom Parties</div>
-                            </div>
-                            <img alt="image4" src="<?php echo base_url(); ?>img/portfolio/image4.jpg">
-                        </div>
-                    </figure>
-                </a>
-            </div>
-            <!-- End Portfolio Item -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 code">
-                <a href="<?php echo base_url(); ?>page_nav/goto_get_together">
-                    <figure class="animate <br />
-<b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
-">
-                        <div class="grid-image">
-                            <div class="featured-info">
-                                <div class="info-wrapper">Get Togethers</div>
-                            </div>
-                            <img alt="image5" src="<?php echo base_url(); ?>img/portfolio/image5.jpg">
-                        </div>
-                    </figure>
-                </a>
-            </div>
-            <!-- End Portfolio Item -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 code">
-                <a href="<?php echo base_url(); ?>page_nav/goto_conferences">
-                    <figure class="animate <br />
-<b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
-">
-                        <div class="grid-image">
-                            <div class="featured-info">
-                                <div class="info-wrapper">Conferences</div>
+                                <div class="info-wrapper">Cakes</div>
                             </div>
                             <img alt="image6" src="<?php echo base_url(); ?>img/portfolio/image6.jpg">
                         </div>
@@ -192,13 +160,13 @@
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 code">
-                <a href="<?php echo base_url(); ?>page_nav/goto_make_your_own"">
+                <a href="photography.html">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
                         <div class="grid-image">
                             <div class="featured-info">
-                                <div class="info-wrapper">Make your own</div>
+                                <div class="info-wrapper">Photography & Videography</div>
                             </div>
                             <img alt="image7" src="<?php echo base_url(); ?>img/portfolio/image7.jpg">
                         </div>
@@ -207,36 +175,36 @@
             </div>
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
-            <!-- <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 video">
-                <a href="#">
+            <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 video">
+                <a href="sounds.html">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
                         <div class="grid-image">
                             <div class="featured-info">
-                                <div class="info-wrapper">Quam nunc putamus</div>
+                                <div class="info-wrapper">Sounds</div>
                             </div>
                             <img alt="image8" src="<?php echo base_url(); ?>img/portfolio/image8.jpg">
                         </div>
                     </figure>
                 </a>
-            </div> -->
+            </div>
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
-            <!-- <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 audio">
-                <a href="#">
+            <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 audio">
+                <a href="printing.html">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
                         <div class="grid-image">
                             <div class="featured-info">
-                                <div class="info-wrapper">Placerat facer possim</div>
+                                <div class="info-wrapper">Prinings</div>
                             </div>
                             <img alt="image9" src="<?php echo base_url(); ?>img/portfolio/image9.jpg">
                         </div>
                     </figure>
                 </a>
-            </div> -->
+            </div>
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
             <!-- <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 code">
@@ -271,26 +239,28 @@
             </div> -->
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
-            <<!-- div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 video">
-                        <a href="#">
-                            <figure class="animate <br />
+            <!-- <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 video">
+                <a href="#">
+                    <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">
-                                <div class="grid-image">
-                                    <div class="featured-info">
-                                        <div class="info-wrapper">Sed ut perspiciatis</div>
-                                    </div>
-                                    <img alt="image12" src="<?php echo base_url(); ?>img/portfolio/image12.jpg">
-                                </div>
-                            </figure>
-                        </a>
-                    </div> -->
+                        <div class="grid-image">
+                            <div class="featured-info">
+                                <div class="info-wrapper">Sed ut perspiciatis</div>
+                            </div>
+                            <img alt="image12" src="<?php echo base_url(); ?>img/portfolio/image12.jpg">
+                        </div>
+                    </figure>
+                </a>
+            </div> -->
             <!-- End Portfolio Item -->
         </div>
     </div>
 </div>
 <!-- === END CONTENT === -->
+<!-- === END CONTENT === -->
 <!-- === BEGIN FOOTER === -->
+
 <!-- Footer -->
 <div id="footer" class="background-dark text-light">
     <div class="container no-padding">
@@ -338,8 +308,8 @@
     <!-- Slimbox2-->
     <script type="text/javascript" src="<?php echo base_url(); ?>js/slimbox2.js" charset="utf-8"></script>
     <!-- Modernizr -->
-    <script src="<?php echo base_url(); ?>/js/modernizr.custom.js" type="text/javascript"></script>
+    <script src="<?php echo base_url(); ?>js/modernizr.custom.js" type="text/javascript"></script>
     <!-- End JS -->
 </body>
 </html>
-<!-- === END FOOTER === -->
+<!-- === END FOOTER ===
