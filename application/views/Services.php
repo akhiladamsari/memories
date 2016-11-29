@@ -112,7 +112,7 @@
             <!-- End Portfolio Item -->
             <!-- Portfolio Item -->
             <div class="portfolio-item col-sm-3 col-xs-6 margin-bottom-40 video">
-                <a href="<?php echo base_url(); ?>page_nav/goto_contact">
+                <a href="<?php echo base_url(); ?>page_nav/goto_birthday">
                     <figure class="animate <br />
 <b>Notice</b>:  Undefined variable: animate in <b>C:\xampp\htdocs\bootstrap\html\php\portfolio-item-4col.php</b> on line <b>28</b><br />
 ">

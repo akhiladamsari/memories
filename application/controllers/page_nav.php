@@ -22,6 +22,10 @@ class page_nav extends CI_Controller {
         $this->load->view('weddings');
     }
 
+    public function goto_birthday(){
+        $this->load->view('birthday');
+    }
+
     public function goto_conferences(){
         $this->load->view('conferences');
     }
@@ -49,11 +53,10 @@ class page_nav extends CI_Controller {
     public function goto_sign_up(){
         $this->load->view('page-sign-up');
     }
-
+//in the wedding page
     public function goto_wed_hall_deco(){
         $this->load->view('wedding/hall_deco');
     }
-
     public function goto_wed_halls(){
         $this->load->view('wedding/halls');
     }
@@ -63,6 +66,15 @@ class page_nav extends CI_Controller {
     public function goto_wed_catering(){
         $this->load->view('wedding/catering');
     }
+    public function goto_wed_photo(){
+        $this->load->view('wedding/photography');
+    }
+    public function goto_wed_printing(){
+        $this->load->view('wedding/printing');
+    }
+    public function goto_wed_sounds(){
+        $this->load->view('wedding/sounds');
+    }
     public function goto_wed_dresses(){
         $this->load->view('wedding/dresses');
     }
@@ -70,21 +82,48 @@ class page_nav extends CI_Controller {
         $this->load->view('wedding/make_up');
     }
 
-    public function goto_wed_photo(){
-        $this->load->view('wedding/photography');
+//in the birthday page page
+    public function goto_bday_hall_deco(){
+        $this->load->view('birthday/hall_deco');
+    }
+    public function goto_bday_halls(){
+        $this->load->view('birthday/halls');
+    }
+    public function goto_bday_cakes(){
+        $this->load->view('birthday/cakes');
+    }
+    public function goto_bday_catering(){
+        $this->load->view('birthday/catering');
+    }
+    public function goto_bday_photo(){
+        $this->load->view('birthday/photography');
+    }
+    public function goto_bday_printing(){
+        $this->load->view('birthday/printing');
+    }
+    public function goto_bday_sounds(){
+        $this->load->view('birthday/sounds');
     }
 
-    public function goto_wed_printing(){
-        $this->load->view('wedding/printing');
+    //in the conferences page page
+    public function goto_conf_hall_deco(){
+        $this->load->view('conferences/hall_deco');
     }
-
-    public function goto_wed_sounds(){
-        $this->load->view('wedding/sounds');
+    public function goto_conf_halls(){
+        $this->load->view('conferences/halls');
     }
-
-
-
-
+    public function goto_conf_catering(){
+        $this->load->view('conferences/catering');
+    }
+    public function goto_conf_photo(){
+        $this->load->view('conferences/photography');
+    }
+    public function goto_conf_printing(){
+        $this->load->view('conferences/printing');
+    }
+    public function goto_conf_sounds(){
+        $this->load->view('conferences/sounds');
+    }
 
 }
 
