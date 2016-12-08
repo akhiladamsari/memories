@@ -7,7 +7,7 @@
 <!--<![endif]-->
 <head>
     <!-- Title -->
-    <title>Boss - Professional Bootstrap Template</title>
+    <title>Memories - Contact Us</title>
     <!-- Meta -->
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="">
@@ -28,16 +28,22 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" type="text/css" rel="stylesheet">
 </head>
 <body>
-<div id="social" class="visible-lg">
+<!-- <div id="social" class="visible-lg">
     <ul class="social-icons pull-right hidden-xs">
-        <li>
-            <button type="button" class="btn btn-primary btn-sm"><a href="<?php echo base_url(); ?>page_nav/goto_login">Login</a></button>
+        <li class="social-rss">
+            <a href="#" target="_blank" title="RSS"></a>
         </li>
-        <li>
-            <a href="<?php echo base_url(); ?>page_nav/goto_sign_up">Sign-Up</a>
+        <li class="social-twitter">
+            <a href="#" target="_blank" title="Twitter"></a>
+        </li>
+        <li class="social-facebook">
+            <a href="#" target="_blank" title="Facebook"></a>
+        </li>
+        <li class="social-googleplus">
+            <a href="#" target="_blank" title="GooglePlus"></a>
         </li>
     </ul>
-</div>
+</div> -->
 <!-- Header -->
 <div id="header" style="background-position: 50% 0%; <br />
 <b>Notice</b>:  Undefined variable: full_page in <b>C:\xampp\htdocs\bootstrap\html\php\header.php</b> on line <b>46</b><br />
@@ -52,7 +58,6 @@
             </div>
             <!-- End Logo -->
         </div>
-        <!-- Top Menu -->
         <!-- Top Menu -->
         <div id="hornav" class="row text-light">
             <div class="col-md-12">
@@ -83,45 +88,56 @@
 <!-- === BEGIN CONTENT === -->
 <div id="content">
     <div class="container background-white">
-        <div class="container">
-            <div class="row margin-vert-30">
-                <!-- Login Box -->
-                <div class="col-md-6 col-md-offset-3 col-sm-offset-3">
-                    <form class="login-page" method="post" action="<?php echo base_url(); ?>sign_up/login">
-                        <?php echo validation_errors(); ?>
-                        <?php echo form_open('form'); ?>
-                        <div class="login-header margin-bottom-30">
-                            <h2>Login to your account</h2>
-                        </div>
-                        <div class="input-group margin-bottom-20">
-                                    <span class="input-group-addon">
-                                        <i class="fa fa-user"></i>
-                                    </span>
-                            <input placeholder="Username" class="form-control" type="text" name="username">
-                        </div>
-                        <div class="input-group margin-bottom-20">
-                                    <span class="input-group-addon">
-                                        <i class="fa fa-lock"></i>
-                                    </span>
-                            <input placeholder="Password" class="form-control" type="password" name="password">
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label class="checkbox">
-                                    <input type="checkbox">Stay signed in</label>
-                            </div>
-                            <div class="col-md-6">
-                                <button class="btn btn-primary pull-right" type="submit">Login</button>
-                            </div>
-                        </div>
-                        <hr>
-                        <h4>Forget your Password ?</h4>
-                        <p>
-                            <a href="#">Click here</a>to reset your password.</p>
-                    </form>
+        <div class="row margin-vert-30">
+            <!-- Main Column -->
+            <div class="col-md-9">
+                <!-- Main Content -->
+                <div class="headline">
+                    <h2 class="margin-bottom-20">Contact Form</h2>
                 </div>
-                <!-- End Login Box -->
+                <p>If you have any kind of question please do not hesitate to contact us.</p>
+                <br>
+                <!-- Contact Form -->
+                <form>
+                    <label>Package Name</label>
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-6 col-md-offset-0">
+                            <input class="form-control" type="text">
+                        </div>
+                    </div>
+                    <label>Type</label>
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-6 col-md-offset-0">
+                            <input class="form-control" type="text">
+                        </div>
+                    </div>
+                    <label>Package Description</label>
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-8 col-md-offset-0">
+                            <textarea rows="8" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <label>Package Items</label>
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-8 col-md-offset-0">
+                            <textarea rows="8" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <label>Package Price</label>
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-6 col-md-offset-0">
+                            <input class="form-control" type="text">
+                        </div>
+                    </div>
+                    <p>
+                        <button type="submit" class="btn btn-primary">Update Package</button>
+                    </p>
+                </form>
+                <!-- End Contact Form -->
+                <!-- End Main Content -->
             </div>
+            <!-- End Main Column -->
+
         </div>
     </div>
 </div>

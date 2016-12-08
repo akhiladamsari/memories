@@ -1,7 +1,9 @@
 <!--=== BEGIN HEADER === -->
 <!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
@@ -9,10 +11,10 @@
     <!-- Title -->
     <title>Memories</title>
     <!-- Meta -->
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <!-- Favicon -->
     <link href="favicon.ico" rel="shortcut icon">
     <!-- Bootstrap Core CSS -->
@@ -29,14 +31,26 @@
 </head>
 <body>
 <div id="social" class="visible-lg">
-    <ul class="social-icons pull-right hidden-xs">
-        <li>
-            <button type="button" class="btn btn-primary btn-sm"><a href="pages-login.html">Login</a></button>
-        </li>
-        <li>
-            <a href="pages-sign-up.html">Sign-Up</a>
-        </li>
-    </ul>
+    <?php if ($this->session->has_userdata('buyer_username')) { ?>
+        <ul class="social-icons pull-right hidden-xs">
+            <li>You are logged in as <?php echo $this->session->userdata('buyer_username') ?></li>
+            <li>
+                <button type="button" class="btn btn-primary btn-sm"><a
+                        href="<?php echo base_url(); ?>sign_up/logout">Logout</a></button>
+            </li>
+        </ul>
+
+    <?php } else { ?>
+        <ul class="social-icons pull-right hidden-xs">
+            <li>
+                <button type="button" class="btn btn-primary btn-sm">
+                    <a href="<?php echo base_url(); ?>page_nav/goto_login">Login</a></button>
+            </li>
+            <li>
+                <a href="<?php echo base_url(); ?>page_nav/goto_sign_up">Sign-Up</a>
+            </li>
+        </ul>
+    <?php } ?>
 </div>
 <!-- Header -->
 <div id="header" style="background-position: 50% 0%; height:100%;" data-stellar-background-ratio="0.5">
@@ -45,7 +59,7 @@
             <!-- Logo -->
             <div class="logo">
                 <a href="index.html" title="">
-                    <img src="<?php echo base_url(); ?>img/logo.png" alt="Logo" />
+                    <img src="<?php echo base_url(); ?>img/logo.png" alt="Logo"/>
                 </a>
             </div>
             <!-- End Logo -->
@@ -84,16 +98,20 @@
             <!-- Main Text -->
             <div class="col-md-12">
                 <h2 class="text-center article-title">Welcome to Memories</h2>
-                <p class="text-center">Whether you need to plan a wedding, birthday, bridal or baby shower, or a fun party, Memories will be at your side every step of the way.
-                    We offer a wide variety of services and look forward to helping YOU create moments into memories that will last a lifetime.</p>
-                <img class="fadeInUp animate" alt="" src="<?php echo base_url(); ?>img/responsive_homepage.jpg" style="display: block; margin-left: auto; margin-right: auto; margin-top: 40px;">
+                <p class="text-center">Whether you need to plan a wedding, birthday, bridal or baby shower, or a fun
+                    party, Memories will be at your side every step of the way.
+                    We offer a wide variety of services and look forward to helping YOU create moments into memories
+                    that will last a lifetime.</p>
+                <img class="fadeInUp animate" alt="" src="<?php echo base_url(); ?>img/responsive_homepage.jpg"
+                     style="display: block; margin-left: auto; margin-right: auto; margin-top: 40px;">
             </div>
             <!-- End Main Text -->
         </div>
     </div>
 </div>
 <!-- Icons -->
-<div id="icons" class="parallax-bg1 text-light background-primary" style="background-position: 50% 0%;" data-stellar-background-ratio="0.5">
+<div id="icons" class="parallax-bg1 text-light background-primary" style="background-position: 50% 0%;"
+     data-stellar-background-ratio="0.5">
     <div class="container">
         <div class="row margin-vert-40">
             <!-- Icons -->
@@ -123,11 +141,18 @@
         <div class="row margin-vert-40">
             <div class="col-md-12">
                 <h2 class="text-center article-title">Lorem ipsum dolor</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac, varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula. Nulla suscipit erat nibh, ut
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sapien risus, blandit at fringilla ac,
+                    varius sed dolor. Donec augue lacus, vulputate sed consectetur facilisis, interdum pharetra ligula.
+                    Nulla suscipit erat nibh, ut
                     porttitor nisl dapibus eu.</p>
-                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit, lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer suscipit lectus eu enim porttitor
-                    fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a nibh.</p>
-                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt
+                <p>Phasellus porta eros vel lacus euismod consequat. Phasellus eleifend, nibh non feugiat hendrerit,
+                    lacus enim adipiscing eros, a pharetra erat neque eget est. Quisque vitae aliquet urna. Integer
+                    suscipit lectus eu enim porttitor
+                    fringilla. Ut blandit, urna in auctor euismod, arcu eros pharetra metus, a porta purus libero a
+                    nibh.</p>
+                <p>Nam eget urna pellentesque nisl ultrices dapibus. Mauris accumsan vehicula nisl, sed tempus mauris
+                    facilisis eu. Donec a iaculis nisi, quis malesuada justo. Pellentesque ut enim sit amet ipsum
+                    dignissim egestas. Morbi tincidunt
                     rhoncus urna eget placerat.</p>
             </div>
         </div>
@@ -135,14 +160,17 @@
 </div>
 <!-- End Content -->
 <!-- Hiring -->
-<div id="hiring" class="parallax-bg3 text-light" style="background-position: 50% 0%;" data-stellar-background-ratio="0.5">
+<div id="hiring" class="parallax-bg3 text-light" style="background-position: 50% 0%;"
+     data-stellar-background-ratio="0.5">
     <div class="container">
         <div class="row">
             <div class="col-md-12 margin-vert-40">
                 <h2 class="animate fadeIn" style="text-align: center;">We are Hiring!</h2>
                 <hr>
-                <p class="animate fadeIn" style="text-align: center;">Mauris accumsan vehicula nisl, sed tempus mauris facilisis eu. Donec a iaculis nisi, quis malesuada justo.
-                    <br>Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget placerat.</p>
+                <p class="animate fadeIn" style="text-align: center;">Mauris accumsan vehicula nisl, sed tempus mauris
+                    facilisis eu. Donec a iaculis nisi, quis malesuada justo.
+                    <br>Pellentesque ut enim sit amet ipsum dignissim egestas. Morbi tincidunt rhoncus urna eget
+                    placerat.</p>
                 <p class="animate fadeInUp" style="text-align: center;">
                     <button class="btn btn-lg btn-default" type="button">View Details</button>
                 </p>
