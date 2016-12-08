@@ -47,7 +47,8 @@
                     <a href="<?php echo base_url(); ?>page_nav/goto_login">Login</a></button>
             </li>
             <li>
-                <a href="<?php echo base_url(); ?>page_nav/goto_sign_up">Sign-Up</a>
+                <button type="button" class="btn btn-primary btn-sm">
+                <a href="<?php echo base_url(); ?>page_nav/goto_sign_up">Sign-Up</a></button>
             </li>
         </ul>
     <?php } ?>
