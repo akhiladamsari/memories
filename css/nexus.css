@@ -1824,7 +1824,7 @@ ul.grid li:first-child a {
 /* Tabs */
 /*-----------------------------------------------------------------------------------*/
 .tabs-dark {
-  background-color: #3F3647;
+  background-color: #d93ca6;
   position: relative;
 }
 .tabs-dark .nav-tabs {
@@ -1854,7 +1854,7 @@ ul.grid li:first-child a {
 .tabs-dark .nav-tabs > li.active > a:hover,
 .tabs-dark .nav-tabs > li.active > a:focus {
   -moz-border-colors: none;
-  background-color: #3F3647 !important;
+  background-color: #d93ca6 !important;
   border: none;
   color: #FFFFFF;
   cursor: default;
@@ -2900,3 +2900,4 @@ ul.posts-list li {
   min-height: 40px;
   text-align: center;
 }
+

@@ -28,22 +28,29 @@
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" type="text/css" rel="stylesheet">
 </head>
 <body>
-<!-- <div id="social" class="visible-lg">
-    <ul class="social-icons pull-right hidden-xs">
-        <li class="social-rss">
-            <a href="#" target="_blank" title="RSS"></a>
-        </li>
-        <li class="social-twitter">
-            <a href="#" target="_blank" title="Twitter"></a>
-        </li>
-        <li class="social-facebook">
-            <a href="#" target="_blank" title="Facebook"></a>
-        </li>
-        <li class="social-googleplus">
-            <a href="#" target="_blank" title="GooglePlus"></a>
-        </li>
-    </ul>
-</div> -->
+ <div id="social" class="visible-lg">
+    <?php if ($this->session->has_userdata('buyer_username')) { ?>
+        <ul class="social-icons pull-right hidden-xs">
+            <li>You are logged in as <?php echo $this->session->userdata('buyer_username') ?></li>
+            <li>
+                <button type="button" class="btn btn-primary btn-sm"><a
+                        href="<?php echo base_url(); ?>sign_up/logout">Logout</a></button>
+            </li>
+        </ul>
+
+    <?php } else { ?>
+        <ul class="social-icons pull-right hidden-xs">
+            <li>
+                <button type="button" class="btn btn-primary btn-sm">
+                    <a href="<?php echo base_url(); ?>page_nav/goto_login">Login</a></button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-primary btn-sm">
+                <a href="<?php echo base_url(); ?>page_nav/goto_sign_up">Sign-Up</a></button>
+            </li>
+        </ul>
+    <?php } ?>
+</div>
 <!-- Header -->
 <div id="header" style="background-position: 50% 0%; <br />
 <b>Notice</b>:  Undefined variable: full_page in <b>C:\xampp\htdocs\bootstrap\html\php\header.php</b> on line <b>46</b><br />
