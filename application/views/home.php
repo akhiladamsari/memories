@@ -31,11 +31,11 @@
 </head>
 <body>
 <div id="social" class="visible-lg">
-    <?php if ($this->session->has_userdata('buyer_username')) { ?>
+    <?php if ($this->session->has_userdata('username')) { ?>
         <ul class="social-icons pull-right hidden-xs">
 
-            <li>You are logged in as <?php echo $this->session->userdata('buyer_username') ?></li>
-
+            <li>You are logged in as <?php echo $this->session->userdata('username') ?></li>
+            <li><?php echo $this->session->userdata('user') ?></li>
             <li>
                 <button type="button" class="btn btn-primary btn-sm"><a
                         href="<?php echo base_url(); ?>sign_up/logout">Logout</a></button>

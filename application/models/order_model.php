@@ -14,11 +14,9 @@ class order_model extends CI_Model  {
 
     }
 
-    public function get_all_packages_m(){
-        $query = $this->db->get("package");
-        return $query->result();
 
-    }
+
+
 
 
 }

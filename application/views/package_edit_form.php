@@ -33,10 +33,16 @@
 <div id="social" class="visible-lg">
     <?php if ($this->session->has_userdata('buyer_username')) { ?>
         <ul class="social-icons pull-right hidden-xs">
-            <li>You are logged in as <?php echo $this->session->userdata('buyer_username') ?></li>
+
+            <li>You are logged in as <?php echo $this->session->userdata('username') ?></li>
+            <li><?php echo $this->session->userdata('user') ?></li>
             <li>
                 <button type="button" class="btn btn-primary btn-sm"><a
                         href="<?php echo base_url(); ?>sign_up/logout">Logout</a></button>
+            </li>
+            <li>
+                <button type="button" class="btn btn-primary btn-sm">
+                    <a href="<?php echo base_url(); ?>page_nav/goto_seller_profile">Profile</a></button>
             </li>
         </ul>
 
@@ -107,47 +113,48 @@
                                 <h2>Log Note</h2>
                             </div>
                             <!-- Contact Form -->
+
                             <form>
                                 <label>package_id</label>
                                 <div class="row margin-bottom-20">
                                     <div class="col-md-6 col-md-offset-0">
                                         <input class="form-control" type="text" name="description"
-                                               value="<?php echo $bla->package_id; ?>">
+                                               value="">
                                     </div>
                                 </div>
                                 <label>package_name</label>
                                 <div class="row margin-bottom-20">
                                     <div class="col-md-6 col-md-offset-0">
                                         <input class="form-control" type="text" name="location"
-                                               value="<?php echo $bla->package_name; ?>">
+                                               value="">
                                     </div>
                                 </div>
                                 <label>type_id</label>
                                 <div class="row margin-bottom-20">
                                     <div class="col-md-6 col-md-offset-0">
                                         <input class="form-control" type="text" name="province"
-                                               value="<?php echo $bla->type_id; ?>">
+                                               value="">
                                     </div>
                                 </div>
                                 <label>package_description</label>
                                 <div class="row margin-bottom-20">
                                     <div class="col-md-6 col-md-offset-0">
                                         <input class="form-control" type="text" name="package_description"
-                                               value="<?php echo $bla->package_description; ?>">
+                                               value="">
                                     </div>
                                 </div>
                                 <label>package_items</label>
                                 <div class="row margin-bottom-20">
                                     <div class="col-md-6 col-md-offset-0">
                                         <input class="form-control" type="text" name="package_items"
-                                               value="<?php echo $bla->package_items; ?>">
+                                               value="">
                                     </div>
                                 </div>
                                 <label>package_price</label>
                                 <div class="row margin-bottom-20">
                                     <div class="col-md-6 col-md-offset-0">
                                         <input class="form-control" type="text" name="package_price"
-                                               value="<?php echo $bla->package_price; ?>">
+                                               value="">
                                     </div>
                                 </div>
 
@@ -160,6 +167,8 @@
                     </div>
                 </div>
             </div>
+            </div>
+        </div>
             <!-- === END CONTENT === -->
             <!-- === BEGIN FOOTER === -->
             <!-- Footer -->

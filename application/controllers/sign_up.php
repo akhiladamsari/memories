@@ -43,21 +43,39 @@ class sign_up extends CI_Controller
 
     public function login()
     {
-
+        $user = $this->input->post('user');
         $username = $this->input->post('username');
         $password = $this->input->post('password');
-        $this->load->model('buyers');
-        $result = $this->buyers->buyer_login($username,$password);
-        if ($result == TRUE) {
-            $newdata = array(
-                'buyer_username' => $this->input->post('username'),
-                'logged_in' => TRUE
-            );
-            $this->session->set_userdata($newdata);
+        $this->load->model('user_model');
+        if ($user == 'buyer') {
+            $result = $this->user_model->buyer_login($username, $password);
+            if ($result == TRUE) {
+                $newdata = array(
+                    'username' => $this->input->post('username'),
+                    'user' => "buyer",
+                    'logged_in' => TRUE
+                );
+                $this->session->set_userdata($newdata);
 
-            $this->load->view('home', $newdata);
-        } else {
-            $this->load->view('blank-page');
+                $this->load->view('home', $newdata);
+            } else {
+                $this->load->view('blank-page');
+            }
+        }else{
+            $result = $this->user_model->seller_login($username, $password);
+            if ($result == TRUE) {
+                $newdata = array(
+                    'username' => $this->input->post('username'),
+                    'user' => "seller",
+                    'logged_in' => TRUE
+                );
+                $this->session->set_userdata($newdata);
+
+                $this->load->view('home', $newdata);
+            } else {
+                $this->load->view('blank-page');
+            }
+
         }
     }
 

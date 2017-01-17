@@ -31,11 +31,11 @@
 </head>
 <body>
 <div id="social" class="visible-lg">
-    <?php if ($this->session->has_userdata('buyer_username')) { ?>
+    <?php if ($this->session->has_userdata('username')) { ?>
         <ul class="social-icons pull-right hidden-xs">
 
-            <li>You are logged in as <?php echo $this->session->userdata('buyer_username') ?></li>
-
+            <li>You are logged in as <?php echo $this->session->userdata('username') ?></li>
+            <li><?php echo $this->session->userdata('user') ?></li>
             <li>
                 <button type="button" class="btn btn-primary btn-sm"><a
                         href="<?php echo base_url(); ?>sign_up/logout">Logout</a></button>
@@ -104,134 +104,165 @@
 <div id="content">
     <div class="container background-white">
         <div class="row margin-vert-30">
-            <div class="col-md-12 margin-top-30">
-                <!-- Tab v3 -->
-                <div class="row tabs">
-                    <div class="col-sm-2">
-                        <ul class="nav nav-pills nav-stacked">
-                            <li class="active">
-                                <a href="#new_orders" data-toggle="tab">
-                                    <i class="fa fa-home"></i> New Orders</a>
-                            </li>
-                            <li>
-                                <a href="#sample-3b" data-toggle="tab">
-                                    <i class="fa fa-cloud"></i> Order History</a>
-                            </li>
-                            <li>
-                                <a href="#sample-3c" data-toggle="tab">
-                                    <i class="fa fa-comments"></i> Packages</a>
-                            </li>
-                            <li>
-                                <a href="#sample-3d" data-toggle="tab">
-                                    <i class="fa fa-gear"></i> Sample Heading 4</a>
-                            </li>
-                        </ul>
+<!--            <div class="col-md-3">-->
+<!--                <div class="panel-heading">-->
+<!--                    <div class="col-sm-3">-->
+<!--                        <ul class="nav nav-pills nav-stacked">-->
+<!--                            <li class="active">-->
+<!--                                <a href="#new_orders" data-toggle="tab">-->
+<!--                                    <i class="fa fa-home"></i> New Orders</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="#sample-3b" data-toggle="tab">-->
+<!--                                    <i class="fa fa-cloud"></i> Order History</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="#sample-3c" data-toggle="tab">-->
+<!--                                    <i class="fa fa-comments"></i> Packages</a>-->
+<!--                            </li>-->
+<!--                            <li>-->
+<!--                                <a href="#sample-3d" data-toggle="tab">-->
+<!--                                    <i class="fa fa-gear"></i> Add Package</a>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+<!--                    </div>-->
+<!--                </div>-->
+            <!-- End Side Column -->
+                <div id="accordion2" class="panel-group alternative">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" href="#new_orders" data-parent="#accordion2" data-toggle="collapse">
+                                    Sample Heading 1
+                                </a>
+                            </h4>
+
+                        </div>
+                        <div class="tab-pane fade in active" id="new_orders">
+                            <table class="table table-striped table-hover" id="keywords" cellspacing="20"
+                                   cellpadding="10">
+                                <thead>
+                                <tr>
+                                    <th><span>Order ID</span></th>
+                                    <th><span>Buyer ID</span></th>
+                                    <th><span>Package ID</span></th>
+                                    <th><span>Package Name</span></th>
+                                    <th><span>Seller id</span></th>
+                                    <th><span>Order date</span></th>
+                                    <th><span>Accepted</span></th>
+                                    <th><span>Viewed</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <?php
+                                    foreach ($neworder as $bla){
+                                    ?>
+                                    <td class="lalign"><?php echo $bla->order_id; ?></td>
+                                    <td><?php echo $bla->buyer_id; ?></td>
+                                    <td><?php echo $bla->package_id; ?></td>
+                                    <td><?php echo $bla->package_name; ?></td>
+                                    <td><?php echo $bla->seller_id; ?></td>
+                                    <td><?php echo $bla->order_date; ?></td>
+                                    <td><?php echo $bla->accepted; ?></td>
+                                    <td><?php echo $bla->viewed; ?></td>
+                                </tr>
+                                <?php } ?>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <div class="col-sm-10">
-                        <div class="tab-content">
-                            <div class="tab-pane fade in active" id="new_orders">
-                                <table class="table table-striped table-hover" id="keywords" cellspacing="20"
-                                       cellpadding="10">
-                                    <thead>
-                                    <tr>
-                                        <th><span>Order ID</span></th>
-                                        <th><span>Buyer ID</span></th>
-                                        <th><span>Package ID</span></th>
-                                        <th><span>Package Name</span></th>
-                                        <th><span>Seller id</span></th>
-                                        <th><span>Order date</span></th>
-                                        <th><span>Accepted</span></th>
-                                        <th><span>Viewed</span></th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <?php
-                                        foreach ($neworder as $bla){
-                                        ?>
-                                        <td class="lalign"><?php echo $bla->order_id; ?></td>
-                                        <td><?php echo $bla->buyer_id; ?></td>
-                                        <td><?php echo $bla->package_id; ?></td>
-                                        <td><?php echo $bla->package_name; ?></td>
-                                        <td><?php echo $bla->seller_id; ?></td>
-                                        <td><?php echo $bla->order_date; ?></td>
-                                        <td><?php echo $bla->accepted; ?></td>
-                                        <td><?php echo $bla->viewed; ?></td>
-                                    </tr>
-                                    <?php } ?>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="tab-pane fade in" id="sample-3b">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" href="#sample-3b" data-parent="#accordion2" data-toggle="collapse">
+                                    Sample Heading 2
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="tab-pane fade in" id="sample-3b">
+                            <table class="table table-striped" id="keywords" cellspacing="20" cellpadding="10">
+                                <thead>
+                                <tr>
+                                    <th><span>Order ID</span></th>
+                                    <th><span>Buyer ID</span></th>
+                                    <th><span>Package ID</span></th>
+                                    <th><span>Package Name</span></th>
+                                    <th><span>Seller id</span></th>
+                                    <th><span>Order date</span></th>
+                                    <th><span>Accepted</span></th>
+                                    <th><span>Viewed</span></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <?php
+                                    foreach ($allorders as $bla){
+                                    ?>
+                                    <td class="lalign"><?php echo $bla->order_id; ?></td>
+                                    <td><?php echo $bla->buyer_id; ?></td>
+                                    <td><?php echo $bla->package_id; ?></td>
+                                    <td><?php echo $bla->package_name; ?></td>
+                                    <td><?php echo $bla->seller_id; ?></td>
+                                    <td><?php echo $bla->order_date; ?></td>
+                                    <td><?php echo $bla->accepted; ?></td>
+                                    <td><?php echo $bla->viewed; ?></td>
+                                </tr>
+                                <?php } ?>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="accordion-toggle" href="#sample-3c" data-parent="#accordion2" data-toggle="collapse">
+                                    Sample Heading 3
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="tab-pane fade in" id="sample-3c">
+                            <div class="row">
                                 <table class="table table-striped" id="keywords" cellspacing="20" cellpadding="10">
                                     <thead>
                                     <tr>
-                                        <th><span>Order ID</span></th>
-                                        <th><span>Buyer ID</span></th>
                                         <th><span>Package ID</span></th>
                                         <th><span>Package Name</span></th>
                                         <th><span>Seller id</span></th>
-                                        <th><span>Order date</span></th>
-                                        <th><span>Accepted</span></th>
-                                        <th><span>Viewed</span></th>
+                                        <th><span>Type ID</span></th>
+                                        <th><span>Package Description</span></th>
+                                        <th><span>Package items</span></th>
+                                        <th><span>Package Price</span></th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
                                         <?php
-                                        foreach ($allorders as $bla){
+                                        foreach ($allpackaged as $bla){
                                         ?>
-                                        <td class="lalign"><?php echo $bla->order_id; ?></td>
-                                        <td><?php echo $bla->buyer_id; ?></td>
                                         <td><?php echo $bla->package_id; ?></td>
                                         <td><?php echo $bla->package_name; ?></td>
-                                        <td><?php echo $bla->seller_id; ?></td>
-                                        <td><?php echo $bla->order_date; ?></td>
-                                        <td><?php echo $bla->accepted; ?></td>
-                                        <td><?php echo $bla->viewed; ?></td>
+                                        <td><?php echo $bla->type_id; ?></td>
+                                        <td><?php echo $bla->package_description; ?></td>
+                                        <td><?php echo $bla->package_items; ?></td>
+                                        <td><?php echo $bla->package_price; ?></td>
+                                        <td>
+                                            <a href="<?php echo base_url(); ?>page_nav/edit_package" class = "btn btn-primary btn-xs" role = "button">Edit</a>
+                                        </td>
                                     </tr>
                                     <?php } ?>
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="tab-pane fade in" id="sample-3c">
-                                <div class="row">
-                                    <table class="table table-striped" id="keywords" cellspacing="20" cellpadding="10">
-                                        <thead>
-                                        <tr>
-                                            <th><span>Package ID</span></th>
-                                            <th><span>Package Name</span></th>
-                                            <th><span>Seller id</span></th>
-                                            <th><span>Type ID</span></th>
-                                            <th><span>Package Description</span></th>
-                                            <th><span>Package items</span></th>
-                                            <th><span>Package Price</span></th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                        <tr>
-                                            <?php
-                                            foreach ($allpackaged as $bla){
-                                            ?>
-                                            <td><?php echo $bla->package_id; ?></td>
-                                            <td><?php echo $bla->package_name; ?></td>
-                                            <td><?php echo $bla->type_id; ?></td>
-                                            <td><?php echo $bla->package_description; ?></td>
-                                            <td><?php echo $bla->package_items; ?></td>
-                                            <td><?php echo $bla->package_price; ?></td>
-                                            <td>
-                                                <button type="button" formaction="<?php echo base_url(); ?>page_nav/edit_package" class="btn btn-primary btn-xs">
-                                                    Edit
-                                                </button>
-                                            </td>
-                                        </tr>
-                                        <?php } ?>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-
                         </div>
+
+<!--                    </div>-->
+                </div>
+                <!-- End Accordion - Alternative -->
+                <!-- Tab v3 -->
+                <div class="row tabs">
+
+
                     </div>
                     <!-- Tab v3 -->            </div>
 
