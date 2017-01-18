@@ -14,6 +14,36 @@ class order_model extends CI_Model  {
 
     }
 
+    public function accept_order($order_id){
+        $this->load->model('order_model');
+        $data = array(
+            'accepted' => "A"
+        );
+
+        $this->db->where('order_id', $order_id);
+        $this->db->update('placed_orders', $data);
+        if ($this->db->affected_rows() > 0) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    public function reject_order($order_id){
+        $this->load->model('order_model');
+        $data = array(
+            'accepted' => "R"
+        );
+
+        $this->db->where('order_id', $order_id);
+        $this->db->update('placed_orders', $data);
+        if ($this->db->affected_rows() > 0) {
+            return true;
+        }else{
+            return false;
+        }
+    }
+
 
 
 

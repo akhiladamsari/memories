@@ -8,6 +8,15 @@ class order_controller extends CI_Controller {
         $this->load->view('seller_profile',$neworder);
     }
 
+    public function accept_order($order_id){
+        $this->load->model('order_model');
+        $result = $this->order_model->accept_order($order_id);
+        if ($result == true) {
+            $neworder['neworder'] = $this->get_new_order();
+        }else{
+            $this->load->view('accept_error');
+        }
+    }
 
 }
 ?>

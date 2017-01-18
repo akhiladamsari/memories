@@ -131,37 +131,7 @@
                 <div class="col-sm-9">
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="sample-3a">
-                            <table class="table table-striped table-hover" id="keywords" cellspacing="20"
-                                   cellpadding="10">
-                                <thead>
-                                <tr>
-                                    <th><span>Order ID</span></th>
-                                    <th><span>Buyer ID</span></th>
-                                    <th><span>Package ID</span></th>
-                                    <th><span>Seller id</span></th>
-                                    <th><span>Order date</span></th>
-                                    <th><span>Accepted</span></th>
-                                    <th><span>Viewed</span></th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <?php
-                                    foreach ($neworder as $bla){
-                                    ?>
-                                    <td class="lalign"><?php echo $bla->order_id; ?></td>
-                                    <td><?php echo $bla->buyer_id; ?></td>
-                                    <td><?php echo $bla->package_id; ?></td>
-                                    <td><?php echo $bla->seller_id; ?></td>
-                                    <td><?php echo $bla->order_date; ?></td>
-                                    <td><?php echo $bla->accepted; ?></td>
-                                    <td><?php echo $bla->viewed; ?></td>
-                                    <td><a href="<?php echo base_url(); ?>order_controller/accept_order/<?php echo $bla->order_id; ?>" class="btn btn-default btn-xs" role="button">Accept</a></td>
-                                    <td><a href="<?php echo base_url(); ?>order_controller/reject_order/<?php echo $bla->order_id; ?>" class="btn btn-default btn-xs" role="button">Reject</a></td>
-                                </tr>
-                                <?php } ?>
-                                </tbody>
-                            </table>
+                            <p>Error encountered</p>
                         </div>
                         <div class="tab-pane fade in" id="sample-3b">
                             <table class="table table-striped" id="keywords" cellspacing="20" cellpadding="10">

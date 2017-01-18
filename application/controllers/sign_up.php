@@ -23,8 +23,8 @@ class sign_up extends CI_Controller
                 'buyer_username' => $this->input->post('username'),
                 'buyer_password' => $this->input->post('password')
             );
-            $this->load->model('buyers');
-            $result = $this->buyers->buyer_insert($data);
+            $this->load->model('user_model');
+            $result = $this->user_model->buyer_insert($data);
             if ($result == TRUE) {
                 $newdata = array(
                     'buyer_username' => $this->input->post('username'),

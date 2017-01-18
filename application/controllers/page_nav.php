@@ -20,9 +20,10 @@ class page_nav extends CI_Controller {
 
     public function goto_seller_profile(){
         $this->load->model('order_model');
+        $this->load->model('package_model');
         $new_order['neworder'] = $this->order_model->get_new_order_m();
         $new_order['allorders'] = $this->order_model->get_all_orders_m();
-        $new_order['allpackaged'] = $this->order_model->get_all_packages_m();
+        $new_order['allpackaged'] = $this->package_model->get_all_packages_m();
         $this->load->view('seller_profile',$new_order);
     }
 
@@ -30,10 +31,6 @@ class page_nav extends CI_Controller {
         $this->load->view('weddings');
     }
 
-    public function edit_package(){
-        $this->load->model('order_model');
-        $this->load->view('package_edit_form');
-    }
 
     public function goto_birthday(){
         $this->load->view('birthday');
