@@ -157,52 +157,20 @@
                 <div class="row">
                     <div class="blog-post padding-bottom-20">
                         <!-- Blog Item Header -->
-                        <div class="blog-post-date pull-left">
-                            <span class="day">14</span>
-                            <span class="month">Dec</span>
-                            <br>
-                            <span class="year">2014</span>
-                        </div>
-                        <div class="blog-item-header">
+                        <?php
+                        foreach ($package as $bla){
+                        ?>
+
+
                             <!-- Title -->
                             <h2>
-                                <a href="#">
-                                    Seller 1</a>
+                                <a href="#"><?php echo $bla->package_name; ?></a>
                             </h2>
                             <!-- End Title -->
                             <!-- Blog Item Details -->
-                            <div class="blog-post-details">
-                                <!-- Author Name -->
-                                <div class="blog-post-details-item blog-post-details-item-left">
-                                    <i class="fa fa-user color-gray-light"></i>
-                                    <a href="#">Admin</a>
-                                </div>
-                                <!-- End Author Name -->
-                                <!-- Date -->
-                                <div class="blog-post-details-item blog-post-details-item-left">
-                                    <i class="fa fa-calendar color-gray-light"></i>
-                                    <a href="#">22nd Apr, 2014</a>
-                                </div>
-                                <!-- End Date -->
-                                <!-- Tags -->
-                                <div class="blog-post-details-item blog-post-details-item-left blog-post-details-tags">
-                                    <i class="fa fa-tag color-gray-light"></i>
-                                    <a href="#">HTML</a>,
-                                    <a href="#">Ruby</a>,
-                                    <a href="#">Javascript</a>
-                                </div>
-                                <!-- End Tags -->
-                                <!-- # of Comments -->
-                                <div class="blog-post-details-item blog-post-details-item-left blog-post-details-item-last">
-                                    <a href="">
-                                        <i class="fa fa-comments color-gray-light"></i>
-                                        0 Comments
-                                    </a>
-                                </div>
-                                <!-- End # of Comments -->
-                            </div>
+
                             <!-- End Blog Item Details -->
-                        </div>
+
                         <!-- Blog Item Body -->
                         <div class="blog">
                             <div class="clearfix"></div>
@@ -211,7 +179,9 @@
                                     <img class="margin-bottom-20" src="<?php echo base_url(); ?>/img/blog/image1.jpg" alt="thumb1">
                                 </div>
                                 <div class="col-md-7">
-                                    <p>Seller 1 Description</p>
+                                    <p><?php echo $bla->package_description; ?></p>
+<!--                                    <p>--><?php //echo $bla->package_items; ?><!--</p>-->
+                                    <p><?php echo $bla->package_price; ?></p>
                                     <!-- Read More -->
                                     <a href="#" class="btn btn-primary">
                                         Read More
@@ -223,220 +193,8 @@
                         </div>
                         <!-- End Blog Item Body -->
                     </div>
-                    <!-- End Blog Item -->
-                    <!-- Blog Post -->
-                    <div class="blog-post padding-bottom-20">
-                        <!-- Blog Item Header -->
-                        <div class="blog-post-date pull-left">
-                            <span class="day">14</span>
-                            <span class="month">Dec</span>
-                            <br>
-                            <span class="year">2014</span>
-                        </div>
-                        <div class="blog-item-header">
-                            <!-- Title -->
-                            <h2>
-                                <a href="#">
-                                    Seller 2</a>
-                            </h2>
-                            <!-- End Title -->
-                            <!-- Blog Item Details -->
-                            <div class="blog-post-details">
-                                <!-- Author Name -->
-                                <div class="blog-post-details-item blog-post-details-item-left">
-                                    <i class="fa fa-user color-gray-light"></i>
-                                    <a href="#">Admin</a>
-                                </div>
-                                <!-- End Author Name -->
-                                <!-- Date -->
-                                <div class="blog-post-details-item blog-post-details-item-left">
-                                    <i class="fa fa-calendar color-gray-light"></i>
-                                    <a href="#">22nd Apr, 2014</a>
-                                </div>
-                                <!-- End Date -->
-                                <!-- Tags -->
-                                <div class="blog-post-details-item blog-post-details-item-left blog-post-details-tags">
-                                    <i class="fa fa-tag color-gray-light"></i>
-                                    <a href="#">jQuery</a>,
-                                    <a href="#">HTML</a>,
-                                    <a href="#">Grunt</a>
-                                </div>
-                                <!-- End Tags -->
-                                <!-- # of Comments -->
-                                <div class="blog-post-details-item blog-post-details-item-left blog-post-details-item-last">
-                                    <a href="">
-                                        <i class="fa fa-comments color-gray-light"></i>
-                                        1 Comments
-                                    </a>
-                                </div>
-                                <!-- End # of Comments -->
-                            </div>
-                            <!-- End Blog Item Details -->
-                        </div>
-                        <!-- End Blog Item Header -->
-                        <!-- Blog Item Body -->
-                        <div class="blog">
-                            <div class="clearfix"></div>
-                            <div class="blog-post-body row margin-top-15">
-                                <div class="col-md-5">
-                                    <img class="margin-bottom-20" src="<?php echo base_url(); ?>/img/blog/image2.jpg" alt="thumb2">
-                                </div>
-                                <div class="col-md-7">
-                                    <p>Seller 2 Description</p>
-                                    <!-- Read More -->
-                                    <a href="#" class="btn btn-primary">
-                                        Read More
-                                        <i class="icon-chevron-right readmore-icon"></i>
-                                    </a>
-                                    <!-- End Read More -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Blog Item Body -->
-                    </div>
-                    <!-- End Blog Item -->
-                    <!-- Blog Post -->
-                    <div class="blog-post padding-bottom-20">
-                        <!-- Blog Item Header -->
-                        <div class="blog-post-date pull-left">
-                            <span class="day">14</span>
-                            <span class="month">Dec</span>
-                            <br>
-                            <span class="year">2014</span>
-                        </div>
-                        <div class="blog-item-header">
-                            <!-- Title -->
-                            <h2>
-                                <a href="#">
-                                    Seller 3</a>
-                            </h2>
-                            <!-- End Title -->
-                            <!-- Blog Item Details -->
-                            <div class="blog-post-details">
-                                <!-- Author Name -->
-                                <div class="blog-post-details-item blog-post-details-item-left">
-                                    <i class="fa fa-user color-gray-light"></i>
-                                    <a href="#">Admin</a>
-                                </div>
-                                <!-- End Author Name -->
-                                <!-- Date -->
-                                <div class="blog-post-details-item blog-post-details-item-left">
-                                    <i class="fa fa-calendar color-gray-light"></i>
-                                    <a href="#">22nd Apr, 2014</a>
-                                </div>
-                                <!-- End Date -->
-                                <!-- Tags -->
-                                <div class="blog-post-details-item blog-post-details-item-left blog-post-details-tags">
-                                    <i class="fa fa-tag color-gray-light"></i>
-                                    <a href="#">jQuery</a>,
-                                    <a href="#">HTML</a>,
-                                    <a href="#">HTML5</a>
-                                </div>
-                                <!-- End Tags -->
-                                <!-- # of Comments -->
-                                <div class="blog-post-details-item blog-post-details-item-left blog-post-details-item-last">
-                                    <a href="">
-                                        <i class="fa fa-comments color-gray-light"></i>
-                                        8 Comments
-                                    </a>
-                                </div>
-                                <!-- End # of Comments -->
-                            </div>
-                            <!-- End Blog Item Details -->
-                        </div>
-                        <!-- End Blog Item Header -->
-                        <!-- Blog Item Body -->
-                        <div class="blog">
-                            <div class="clearfix"></div>
-                            <div class="blog-post-body row margin-top-15">
-                                <div class="col-md-5">
-                                    <img class="margin-bottom-20" src="<?php echo base_url(); ?>/img/blog/image3.jpg" alt="thumb3">
-                                </div>
-                                <div class="col-md-7">
-                                    <p>Seller 3 Description</p>
-                                    <!-- Read More -->
-                                    <a href="#" class="btn btn-primary">
-                                        Read More
-                                        <i class="icon-chevron-right readmore-icon"></i>
-                                    </a>
-                                    <!-- End Read More -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Blog Item Body -->
-                    </div>
-                    <!-- End Blog Item -->
-                    <!-- Blog Post -->
-                    <div class="blog-post padding-bottom-20">
-                        <!-- Blog Item Header -->
-                        <div class="blog-post-date pull-left">
-                            <span class="day">14</span>
-                            <span class="month">Dec</span>
-                            <br>
-                            <span class="year">2014</span>
-                        </div>
-                        <div class="blog-item-header">
-                            <!-- Title -->
-                            <h2>
-                                <a href="#">
-                                    Seller 4</a>
-                            </h2>
-                            <!-- End Title -->
-                            <!-- Blog Item Details -->
-                            <div class="blog-post-details">
-                                <!-- Author Name -->
-                                <div class="blog-post-details-item blog-post-details-item-left">
-                                    <i class="fa fa-user color-gray-light"></i>
-                                    <a href="#">Admin</a>
-                                </div>
-                                <!-- End Author Name -->
-                                <!-- Date -->
-                                <div class="blog-post-details-item blog-post-details-item-left">
-                                    <i class="fa fa-calendar color-gray-light"></i>
-                                    <a href="#">22nd Apr, 2014</a>
-                                </div>
-                                <!-- End Date -->
-                                <!-- Tags -->
-                                <div class="blog-post-details-item blog-post-details-item-left blog-post-details-tags">
-                                    <i class="fa fa-tag color-gray-light"></i>
-                                    <a href="#">CoffeeScript</a>,
-                                    <a href="#">HTML</a>,
-                                    <a href="#">Ruby</a>
-                                </div>
-                                <!-- End Tags -->
-                                <!-- # of Comments -->
-                                <div class="blog-post-details-item blog-post-details-item-left blog-post-details-item-last">
-                                    <a href="">
-                                        <i class="fa fa-comments color-gray-light"></i>
-                                        1 Comments
-                                    </a>
-                                </div>
-                                <!-- End # of Comments -->
-                            </div>
-                            <!-- End Blog Item Details -->
-                        </div>
-                        <!-- End Blog Item Header -->
-                        <!-- Blog Item Body -->
-                        <div class="blog">
-                            <div class="clearfix"></div>
-                            <div class="blog-post-body row margin-top-15">
-                                <div class="col-md-5">
-                                    <img class="margin-bottom-20" src="<?php echo base_url(); ?>/img/blog/image4.jpg" alt="thumb4">
-                                </div>
-                                <div class="col-md-7">
-                                    <p>Seller 4 Description</p>
-                                    <!-- Read More -->
-                                    <a href="#" class="btn btn-primary">
-                                        Read More
-                                        <i class="icon-chevron-right readmore-icon"></i>
-                                    </a>
-                                    <!-- End Read More -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End Blog Item Body -->
-                    </div>
-                    <!-- End Blog Item -->
+                    <?php } ?>
+
                     <!-- Pagination -->
                     <ul class="pagination">
                         <li>

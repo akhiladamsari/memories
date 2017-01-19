@@ -114,54 +114,58 @@
                             </div>
                             <!-- Contact Form -->
 
-                            <form>
+                            <form  method="post" action="<?php echo base_url(); ?>package_controller/add_user">
+                                <?php
+                                foreach ($package as $bla){
+                                ?>
+
                                 <label>package_id</label>
                                 <div class="row margin-bottom-20">
                                     <div class="col-md-6 col-md-offset-0">
                                         <input class="form-control" type="text" name="description"
-                                               value="">
+                                               value="<?php echo $bla->package_id; ?>">
                                     </div>
                                 </div>
-                                <label>package_name</label>
+                                <!--<label>package_name</label>
                                 <div class="row margin-bottom-20">
                                     <div class="col-md-6 col-md-offset-0">
                                         <input class="form-control" type="text" name="location"
                                                value="">
                                     </div>
-                                </div>
+                                </div>-->
                                 <label>type_id</label>
                                 <div class="row margin-bottom-20">
                                     <div class="col-md-6 col-md-offset-0">
                                         <input class="form-control" type="text" name="province"
-                                               value="">
+                                               value="<?php echo $bla->type_id; ?>">
                                     </div>
                                 </div>
                                 <label>package_description</label>
                                 <div class="row margin-bottom-20">
                                     <div class="col-md-6 col-md-offset-0">
                                         <input class="form-control" type="text" name="package_description"
-                                               value="">
+                                               value="<?php echo $bla->package_description; ?>">
                                     </div>
                                 </div>
                                 <label>package_items</label>
                                 <div class="row margin-bottom-20">
                                     <div class="col-md-6 col-md-offset-0">
                                         <input class="form-control" type="text" name="package_items"
-                                               value="">
+                                               value="<?php echo $bla->package_items; ?>">
                                     </div>
                                 </div>
                                 <label>package_price</label>
                                 <div class="row margin-bottom-20">
                                     <div class="col-md-6 col-md-offset-0">
                                         <input class="form-control" type="text" name="package_price"
-                                               value="">
+                                               value="<?php echo $bla->package_price; ?>">
                                     </div>
                                 </div>
 
                                 <p>
                                     <button type="submit" class="btn btn-primary">Update Log Note</button>
                                 </p>
-
+                                <?php }?>
                             </form>
                         </div>
                     </div>

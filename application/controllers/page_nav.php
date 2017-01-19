@@ -32,6 +32,12 @@ class page_nav extends CI_Controller {
     }
 
 
+    public function edit_package($package_id){
+        $this->load->model('package_model');
+        $data['package'] = $this->package_model->get_package($package_id);
+        $this->load->view('package_edit_form',$data);
+    }
+
     public function goto_birthday(){
         $this->load->view('birthday');
     }
@@ -65,10 +71,18 @@ class page_nav extends CI_Controller {
     }
 //in the wedding page
     public function goto_wed_hall_deco(){
-        $this->load->view('wedding/hall_deco');
+        $this->load->model('package_model');
+        $type_id = 1;
+        $event_id = 1;
+        $data['package'] = $this->package_model->get_by_event_type($type_id,$event_id);
+        $this->load->view('wedding/hall_deco',$data);
     }
     public function goto_wed_halls(){
-        $this->load->view('wedding/halls');
+        $this->load->model('package_model');
+        $type_id = 1;
+        $event_id = 1;
+        $data['package'] = $this->package_model->get_by_event_type($type_id,$event_id);
+        $this->load->view('wedding/halls',$data);
     }
     public function goto_wed_cakes(){
         $this->load->view('wedding/cakes');

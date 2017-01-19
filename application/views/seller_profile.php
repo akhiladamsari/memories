@@ -217,7 +217,7 @@
                                     <td><?php echo $bla->package_items; ?></td>
                                     <td><?php echo $bla->package_price; ?></td>
                                     <td>
-                                        <a href="<?php echo base_url(); ?>package_controller/edit_package" class="btn btn-default btn-xs" role="button">Edit</a>
+                                        <a href="<?php echo base_url(); ?>page_nav/edit_package/<?php echo $bla->package_id; ?><?php echo $bla->package_id; ?>" class="btn btn-default btn-xs" role="button">Edit</a>
                                     </td>
                                 </tr>
                                 <?php } ?>
